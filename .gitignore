@@ -1,0 +1,13 @@
+# Ambientes Virtuais
+backend/venv/
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Configurações Locais (Segurança)
+frontend/.env.local
+backend/.env
+
+# Pastas de Build
+frontend/dist/
+node_modules/
