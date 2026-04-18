@@ -67,8 +67,8 @@ graph TD
 
 Desenvolvido com **React**, **Vite** e **Tailwind CSS**, o front-end oferece uma interface de usuário intuitiva para busca e visualização dos resultados. Ele é composto por:
 
-*   **Página Home (`Home.jsx`):** Contém o campo de busca para jogos e exibe "Trending Deals".
-*   **Página de Resultados (`Results.jsx`):** Apresenta a comparação de preços, o "Termômetro de Oferta" (classificação da IA) e um gráfico de histórico de preços.
+*   **Página Home (`Home.jsx`):** Contém o campo de busca para jogos.
+*   **Página de Resultados (`Results.jsx`):** Apresenta a comparação de preços, o "Termômetro de Oferta" (classificação da IA).
 
 #### Back-end
 
