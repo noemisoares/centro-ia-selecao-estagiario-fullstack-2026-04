@@ -129,6 +129,10 @@ Para configurar e executar o **GamePrice AI**, siga os passos abaixo:
     ```
     O front-end estará disponível em `http://localhost:5173` (ou outra porta disponível).
 
+### Deploy no Vercel
+
+A aplicação também está disponível online via Vercel em: https://game-price-ai.vercel.app/
+
 ## 8. Explicação de como a IA foi integrada
 
 A Inteligência Artificial, especificamente o algoritmo **K-means**, é o cerne da funcionalidade de análise de preços do **GamePrice AI**. A integração ocorre no back-end, dentro do módulo `app/core/strategy.py`.
@@ -159,6 +163,7 @@ Para promover a extensibilidade e a manutenibilidade, a lógica de análise de p
 
 *   **Dados Históricos:** Para o MVP, o gráfico de histórico de preços pode utilizar dados simulados ou uma janela de tempo limitada, não refletindo um histórico completo de longo prazo.
 *   **Escopo da CheapShark API:** A análise está limitada aos jogos e lojas cobertos pela CheapShark API.
+*   **Limitação de busca por título:** O mecanismo de busca não diferencia entre variações de produtos com nomes semelhantes, como edições distintas, DLCs, trilhas sonoras ou bundles. Por exemplo, uma pesquisa por "Stardew Valley" pode retornar tanto o jogo principal quanto a soundtrack ou pacotes relacionados, e todas essas variantes são tratadas como se fossem o mesmo item na análise de preços.
 *   **Complexidade da IA:** O K-means é uma abordagem robusta para clusterização, mas não considera fatores contextuais mais complexos que poderiam influenciar a percepção de "oportunidade" (e.g., popularidade do jogo, lançamentos futuros, bundles).
 *   **Autenticação/Usuários:** Não há sistema de autenticação de usuários ou funcionalidades personalizadas (e.g., lista de desejos, alertas de preço).
 *   **Cobertura de Lojas:** A comparação de preços pode não incluir todas as lojas digitais ou físicas existentes, focando nas principais fontes de dados da CheapShark.
